@@ -39,9 +39,13 @@
 import { computed, onBeforeUnmount, watch } from 'vue'
 import ProfileForm from './modals/ProfileForm.vue'
 import { useModalStore } from '@/stores/modal'
+import LibraryLocation from './modals/LibraryLocation.vue'
+import BorrowBooks from './modals/BorrowBooks.vue'
 
 const componentsMap: Record<string, any> = {
   ProfileForm,
+  LibraryLocation,
+  BorrowBooks,
 }
 
 const modal = useModalStore()

@@ -18,11 +18,12 @@ const isOpen = ref(false)
       <div class="flex gap-4">
         <span
           class="text-xs p-4 rounded-xl bg-gray-100 hover:bg-linear-to-r from-white to-[#0A5EBE]/50 hover:scale-95 transition noise cursor-pointer"
-          @click="openProfileModal()"
+          @click="() => modal.open('LibraryLocation')"
           >Emplacements des bibliothèques
         </span>
         <span
           class="text-xs p-4 rounded-xl bg-gray-100 hover:bg-linear-to-r from-white to-[#0A5EBE]/50 hover:scale-95 transition noise cursor-pointer"
+          @click="() => modal.open('BorrowBooks')"
           >Comment prêter un livre ?</span
         >
       </div>
@@ -58,11 +59,12 @@ const isOpen = ref(false)
       <div class="flex flex-col gap-4">
         <span
           class="text-xs p-4 rounded-xl bg-gray-100 hover:bg-linear-to-r from-white to-[#0A5EBE]/50 hover:scale-95 transition noise cursor-pointer"
-          @click="openProfileModal()"
+          @click="() => modal.open('LibraryLocation')"
           >Emplacements des bibliothèques</span
         >
         <span
           class="text-xs p-4 rounded-xl bg-gray-100 hover:bg-linear-to-r from-white to-[#0A5EBE]/50 hover:scale-95 transition noise cursor-pointer"
+          @click="() => modal.open('BorrowBooks')"
           >Comment prêter un livre ?</span
         >
       </div>
